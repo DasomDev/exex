@@ -1,34 +1,31 @@
 {
   "quizList": [
     {
-      "id": "open101",
-      "title": "오픈소스 기반 데이터 분석 기말고사",
+      "id": "OPSRCDTA0001",
+      "subjectCode": "OPSRCDTA",
+      "subjectName": "오픈소스기반데이터분석",
+      "title": "오픈소스 기반 데이터 분석 기말고사(1-3)",
       "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
-      "subjectCode": "open101",
       "totalQuestions": 15,
-      "difficulty": "중급",
-      "estimatedTime": "30분",
-      "createdAt": "2024-01-15"
+      "estimatedTime": "30분"
     },
     {
-      "id": "web101",
-      "title": "웹 개발 기초 퀴즈",
-      "description": "HTML, CSS, JavaScript 기초 개념을 다루는 문제들",
-      "subjectCode": "web101",
-      "totalQuestions": 20,
-      "difficulty": "초급",
-      "estimatedTime": "25분",
-      "createdAt": "2024-01-20"
+      "id": "MGTSTRAT0001",
+      "subjectCode": "MGTSTRAT",
+      "subjectName": "경영전략론",
+      "title": "경영전략론 (1-3)",
+      "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
+      "totalQuestions": 15,
+      "estimatedTime": "30분"
     },
     {
-      "id": "vue101",
-      "title": "Vue.js 프레임워크 퀴즈",
-      "description": "Vue 3 Composition API와 관련된 심화 문제들",
-      "subjectCode": "vue101",
+      "id": "MGTSTRAT0002",
+      "subjectCode": "MGTSTRAT",
+      "subjectName": "경영전략론",
+      "title": "경영전략론 (4-6)",
+      "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
       "totalQuestions": 12,
-      "difficulty": "고급",
-      "estimatedTime": "20분",
-      "createdAt": "2024-01-25"
+      "estimatedTime": "20분"
     }
   ]
 }

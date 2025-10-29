@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Malgun Gothic', '맑은 고딕', sans-serif, Arial;
+  color: #333;
+  line-height: 1.8;
+}
