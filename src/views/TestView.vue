@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import quizData from '@/data/quiz.json'
 import TestStatus from '@/components/TestViewer/TestStatus.vue'
 import TestList from '@/components/TestViewer/TestList.vue'
+import TestMarker from '@/components/TestViewer/TestMarker.vue'
 
 interface Question {
   question: string
@@ -88,6 +89,11 @@ const accuracy = computed(() => {
     : 0
 })
 
+// 답안 업데이트 함수
+const updateAnswer = (questionId: number, answer: string) => {
+  selectedAnswers[questionId] = answer
+}
+
 // 답안 체크 함수
 const checkAnswer = (questionId: number, correctAnswer: string) => {
   const userAnswer = selectedAnswers[questionId]
@@ -105,11 +111,11 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
 }
 </script>
 <template>
-  <div class="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 py-12">
-    <div class="max-w-4xl mx-auto px-8 py-12 bg-white rounded-lg shadow-lg p-8">
+  <div class="py-12 min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+    <div class="px-8 py-12 mx-auto max-w-4xl bg-white rounded-lg shadow-lg">
       <!-- 퀴즈 헤더 -->
       <div class="mb-8">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">
+        <h1 class="mb-4 text-3xl font-bold text-center text-gray-800">
           {{ quiz?.title || '퀴즈 로딩 중...' }}
         </h1>
         <p class="text-gray-600">
@@ -127,7 +133,21 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
         :accuracy="accuracy"
       /> -->
       <!-- 문제 섹션 -->
-      <TestList :sections="sections" />
+      <TestList
+        :sections="sections"
+        :selectedAnswers="selectedAnswers"
+        :questionStates="questionStates"
+        @updateAnswer="updateAnswer"
+        @checkAnswer="checkAnswer"
+      />
     </div>
+
+    <!-- 고정된 문제 네비게이션 -->
+    <TestMarker
+      class="hidden sm:block"
+      :sections="sections"
+      :selectedAnswers="selectedAnswers"
+      :questionStates="questionStates"
+    />
   </div>
 </template>

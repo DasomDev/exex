@@ -1019,6 +1019,573 @@
     "id": "OPSRCDTA0003",
     "subjectCode": "OPSRCDTA",
     "subjectName": "오픈소스 기반 데이터 분석",
+    "title": "데이터 분석(8-9)",
+    "description": "데이터 분석에 대한 4지선다형 문제",
+    "totalQuestions": 15,
+    "estimatedTime": "30분",
+    "settings": {
+      "showProgress": true,
+      "allowRetry": false,
+      "showExplanation": true,
+      "timeLimit": null
+    },
+    "sections": [
+      {
+        "id": "data-analysis-understanding",
+        "title": "데이터 분석의 이해 (Understanding Data Analysis)",
+        "questions": [
+          {
+            "question": "데이터 분석의 정의로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "단순히 데이터를 수집하고 저장하는 과정"
+              },
+              {
+                "value": "b",
+                "text": "데이터에서 의미 있는 패턴과 통찰을 발견하여 합리적인 의사결정을 지원하는 기술"
+              },
+              {
+                "value": "c",
+                "text": "데이터를 시각화하여 그래프로 표현하는 기술"
+              },
+              {
+                "value": "d",
+                "text": "데이터베이스를 관리하고 운영하는 기술"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "데이터 분석은 데이터에서 의미 있는 패턴과 통찰을 발견하여 합리적인 의사결정을 지원하는 기술입니다. 이는 단순한 데이터 처리를 넘어 비즈니스 가치를 창출하는 핵심 활동입니다."
+            }
+          },
+          {
+            "question": "빅데이터 시대의 5V에 포함되지 않는 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "Volume (규모)"
+              },
+              {
+                "value": "b",
+                "text": "Velocity (속도)"
+              },
+              {
+                "value": "c",
+                "text": "Visibility (가시성)"
+              },
+              {
+                "value": "d",
+                "text": "Veracity (정확성)"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "빅데이터의 5V는 Volume(규모), Velocity(속도), Variety(다양성), Veracity(정확성), Value(가치)입니다. Visibility(가시성)는 5V에 포함되지 않습니다."
+            }
+          },
+          {
+            "question": "규칙 기반 분석의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "복잡하고 비선형적인 패턴을 잘 포착한다"
+              },
+              {
+                "value": "b",
+                "text": "전문가의 경험과 직관에 기반하며 'if-then' 형태의 논리적 규칙을 적용한다"
+              },
+              {
+                "value": "c",
+                "text": "새로운 상황에 대한 일반화 능력이 뛰어나다"
+              },
+              {
+                "value": "d",
+                "text": "기계학습 알고리즘을 기반으로 한다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "규칙 기반 분석은 전문가의 경험과 직관에 기반한 분석 방식으로, 'if-then' 형태의 논리적 규칙을 명시적으로 프로그래밍하여 적용합니다. 투명성과 해석 가능성이 높지만 복잡한 패턴 포착에는 한계가 있습니다."
+            }
+          },
+          {
+            "question": "기계학습의 학습 방식 중 정답(레이블) 없이 데이터의 패턴과 구조를 발견하는 방법은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "지도학습 (Supervised Learning)"
+              },
+              {
+                "value": "b",
+                "text": "비지도학습 (Unsupervised Learning)"
+              },
+              {
+                "value": "c",
+                "text": "강화학습 (Reinforcement Learning)"
+              },
+              {
+                "value": "d",
+                "text": "준지도학습 (Semi-supervised Learning)"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "비지도학습은 정답(레이블) 없이 데이터의 패턴과 구조를 발견하는 방법입니다. 군집화, 차원 축소, 연관 규칙 학습 등에 활용되며, 데이터 내의 숨겨진 구조를 찾아내는 데 사용됩니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "eda-and-data-process",
+        "title": "탐색적 데이터 분석 및 데이터 분석 과정 (EDA and Data Analysis Process)",
+        "questions": [
+          {
+            "question": "탐색적 데이터 분석(EDA)의 철학으로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터를 빠르게 처리하라"
+              },
+              {
+                "value": "b",
+                "text": "데이터가 무엇을 말하는지 들어보라"
+              },
+              {
+                "value": "c",
+                "text": "데이터를 완벽하게 정제하라"
+              },
+              {
+                "value": "d",
+                "text": "데이터를 최대한 많이 수집하라"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "탐색적 데이터 분석(EDA)은 '데이터가 무엇을 말하는지 들어보라'는 철학에서 시작됩니다. 이는 데이터의 기본적인 특성과 구조를 이해하고, 데이터에 내재된 패턴과 관계를 발견하는 체계적인 접근법입니다."
+            }
+          },
+          {
+            "question": "EDA의 주요 접근법으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "기술통계량 분석과 데이터 시각화"
+              },
+              {
+                "value": "b",
+                "text": "기계학습과 딥러닝"
+              },
+              {
+                "value": "c",
+                "text": "데이터 수집과 저장"
+              },
+              {
+                "value": "d",
+                "text": "가설 검정과 회귀 분석"
+              }
+            ],
+            "correctAnswer": "a",
+            "explanation": {
+              "answer": "a",
+              "description": "EDA의 주요 접근법은 기술통계량 분석과 데이터 시각화입니다. 이 두 가지 방법을 통해 데이터의 분포, 중심 경향, 변수 간 관계, 이상점 등을 파악할 수 있습니다."
+            }
+          },
+          {
+            "question": "자동화된 EDA 도구의 필요성으로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터 저장 공간을 절약하기 위해"
+              },
+              {
+                "value": "b",
+                "text": "새로운 데이터셋 탐색에 많은 시간과 노력이 요구되고 반복적인 작업이 많아 효율성이 저하되기 때문"
+              },
+              {
+                "value": "c",
+                "text": "데이터의 정확성을 높이기 위해"
+              },
+              {
+                "value": "d",
+                "text": "데이터베이스 성능을 향상시키기 위해"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "자동화된 EDA 도구는 새로운 데이터셋 탐색에 많은 시간과 노력이 요구되고, 반복적이고 기계적인 작업들이 많아 효율성이 저하되는 문제를 해결하기 위해 필요합니다. 이를 통해 고차원적인 분석과 모델링에 집중할 수 있습니다."
+            }
+          },
+          {
+            "question": "딥러닝의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "단층 구조의 인공신경망을 사용한다"
+              },
+              {
+                "value": "b",
+                "text": "정형 데이터 처리에만 특화되어 있다"
+              },
+              {
+                "value": "c",
+                "text": "다층 구조의 인공신경망을 기반으로 하며 계층적 표현 학습을 통해 복잡한 패턴을 학습한다"
+              },
+              {
+                "value": "d",
+                "text": "규칙 기반 분석의 한 종류이다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "딥러닝은 다층 구조의 인공신경망을 기반으로 하며, 계층적 표현 학습을 통해 복잡한 패턴을 학습합니다. 저수준의 특징부터 고수준의 특징까지 자동으로 학습이 가능하며, 비정형 데이터 처리에 강점을 보입니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "statistical-analysis",
+        "title": "통계적 분석 방법론 (Statistical Analysis Methodology)",
+        "questions": [
+          {
+            "question": "statsmodels 라이브러리의 주요 기능으로 올바르지 않은 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "상관관계 분석"
+              },
+              {
+                "value": "b",
+                "text": "회귀 분석"
+              },
+              {
+                "value": "c",
+                "text": "이미지 처리"
+              },
+              {
+                "value": "d",
+                "text": "가설 검정"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "statsmodels는 통계 모델링과 검정을 위한 파이썬 라이브러리로, 상관관계 분석, 회귀 분석, 시계열 분석, 가설 검정, 분산 분석 등을 지원합니다. 이미지 처리는 statsmodels의 주요 기능이 아닙니다."
+            }
+          },
+          {
+            "question": "상관관계 분석의 주요 목적으로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터를 시각화하기 위해"
+              },
+              {
+                "value": "b",
+                "text": "두 변수 간의 관계를 수치적으로 평가하여 어떤 요소가 특정 결과에 영향을 미치는지 파악하기 위해"
+              },
+              {
+                "value": "c",
+                "text": "데이터의 결측치를 찾기 위해"
+              },
+              {
+                "value": "d",
+                "text": "데이터의 이상치를 제거하기 위해"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "상관관계 분석은 진단적 분석 단계에서 주로 사용되는 기법으로, 두 변수 간의 관계를 수치적으로 평가하여 어떤 요소가 특정 결과에 영향을 미치는지를 파악하는 것이 주요 목적입니다."
+            }
+          },
+          {
+            "question": "가설 검정에서 p값이 유의수준(0.05)보다 작을 때의 결론은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "귀무가설을 채택한다"
+              },
+              {
+                "value": "b",
+                "text": "귀무가설을 기각한다"
+              },
+              {
+                "value": "c",
+                "text": "대립가설을 기각한다"
+              },
+              {
+                "value": "d",
+                "text": "검정을 다시 실시한다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "가설 검정에서 p값이 유의수준(0.05)보다 작으면 귀무가설(H₀)을 기각합니다. 이는 관찰된 결과가 우연히 발생할 확률이 매우 낮다는 것을 의미하므로, 대립가설을 지지하는 통계적 근거가 있다고 판단합니다."
+            }
+          },
+          {
+            "question": "분산 분석(ANOVA)이 필요한 이유로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "두 그룹 간의 차이를 정확히 측정하기 위해"
+              },
+              {
+                "value": "b",
+                "text": "세 개 이상의 그룹 간 평균 차이를 한 번에 검정하여 제1종 오류 발생 문제를 해결하기 위해"
+              },
+              {
+                "value": "c",
+                "text": "데이터의 분산을 줄이기 위해"
+              },
+              {
+                "value": "d",
+                "text": "회귀 분석의 정확도를 높이기 위해"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "분산 분석(ANOVA)은 세 개 이상의 그룹 간 평균 차이를 한 번에 검정하는 통계적 방법입니다. 여러 그룹을 두 그룹씩 t-검정으로 반복 비교하면 제1종 오류가 누적되는 문제를 해결하기 위해 사용됩니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "machine-learning-analysis",
+        "title": "기계학습 기반 분석 방법론 (Machine Learning-based Analysis)",
+        "questions": [
+          {
+            "question": "로지스틱 회귀의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "연속적인 값을 예측하는 회귀 알고리즘이다"
+              },
+              {
+                "value": "b",
+                "text": "시그모이드 함수를 사용해 확률로 이진 분류를 수행한다"
+              },
+              {
+                "value": "c",
+                "text": "결정 트리 기반의 앙상블 방법이다"
+              },
+              {
+                "value": "d",
+                "text": "최적의 결정 경계를 찾아 분류를 수행한다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "로지스틱 회귀는 시그모이드 함수를 사용해 확률로 이진 분류를 수행하는 분류 알고리즘입니다. 간단하고 해석이 쉬운 장점이 있지만, 복잡한 비선형 관계는 표현하기 어려운 단점이 있습니다."
+            }
+          },
+          {
+            "question": "랜덤 포레스트의 장점으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "단일 결정 트리보다 해석이 쉽다"
+              },
+              {
+                "value": "b",
+                "text": "학습 속도가 매우 빠르다"
+              },
+              {
+                "value": "c",
+                "text": "일반화 성능이 우수하고 과적합을 감소시킨다"
+              },
+              {
+                "value": "d",
+                "text": "메모리 사용량이 적다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "랜덤 포레스트는 여러 결정 트리를 앙상블하여 예측하는 방법으로, 일반화 성능이 우수하고 과적합을 감소시키는 장점이 있습니다. 단일 트리보다 안정적이고 정확도가 높지만, 트리 수가 많아지면 학습/예측이 느려질 수 있습니다."
+            }
+          },
+          {
+            "question": "k-NN 알고리즘의 특징으로 올바르지 않은 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "주변 k개의 데이터를 참고해 분류한다"
+              },
+              {
+                "value": "b",
+                "text": "직관적이고 구현이 간단하다"
+              },
+              {
+                "value": "c",
+                "text": "고차원 데이터에서 성능이 우수하다"
+              },
+              {
+                "value": "d",
+                "text": "계산 비용이 높을 수 있다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "k-NN 알고리즘은 주변 k개의 데이터를 참고해 분류하는 직관적이고 구현이 간단한 방법입니다. 하지만 계산 비용이 높고 고차원에서는 성능이 저하될 수 있는 단점이 있습니다."
+            }
+          },
+          {
+            "question": "비지도 학습 기법 중 데이터 항목 간 빈번한 패턴과 관계 규칙을 발견하는 방법은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "군집화 (Clustering)"
+              },
+              {
+                "value": "b",
+                "text": "차원 축소 (Dimensionality Reduction)"
+              },
+              {
+                "value": "c",
+                "text": "연관 규칙 학습 (Association Rule Learning)"
+              },
+              {
+                "value": "d",
+                "text": "이상치 탐지 (Anomaly Detection)"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "연관 규칙 학습은 데이터 항목 간 빈번한 패턴과 관계 규칙을 발견하는 비지도 학습 기법입니다. Apriori, FP-Growth 등의 알고리즘을 사용하며, 장바구니 분석이나 추천 시스템 등에 활용됩니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "deep-learning-analysis",
+        "title": "딥러닝 기반 분석 방법론 (Deep Learning-based Analysis)",
+        "questions": [
+          {
+            "question": "텐서플로우(TensorFlow)에 대한 설명으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "마이크로소프트에서 개발한 기계학습 프레임워크이다"
+              },
+              {
+                "value": "b",
+                "text": "구글이 개발한 오픈소스 기계학습 프레임워크로 대규모 신경망을 구축하고 학습할 수 있는 도구를 제공한다"
+              },
+              {
+                "value": "c",
+                "text": "통계 분석 전용 라이브러리이다"
+              },
+              {
+                "value": "d",
+                "text": "데이터 시각화 도구이다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "텐서플로우는 구글이 개발한 오픈소스 기계학습 프레임워크로, 대규모 신경망을 구축하고 학습할 수 있는 도구를 제공합니다. 케라스는 텐서플로우 위에 구축된 고수준 API로 복잡한 딥러닝 모델을 간단하고 직관적으로 구성할 수 있게 해줍니다."
+            }
+          },
+          {
+            "question": "CNN(Convolutional Neural Network)의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "텍스트 데이터 처리에 특화되어 있다"
+              },
+              {
+                "value": "b",
+                "text": "이미지 처리에 특화된 딥러닝 모델이다"
+              },
+              {
+                "value": "c",
+                "text": "시계열 데이터 분석에 주로 사용된다"
+              },
+              {
+                "value": "d",
+                "text": "음성 인식에만 사용된다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "CNN(Convolutional Neural Network)은 이미지 처리에 특화된 딥러닝 모델입니다. 합성곱 연산을 통해 이미지의 지역적 특징을 효과적으로 추출하고, 컴퓨터 비전 분야에서 뛰어난 성능을 보입니다."
+            }
+          },
+          {
+            "question": "트랜스포머 아키텍처의 핵심 메커니즘은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "합성곱 연산 (Convolution)"
+              },
+              {
+                "value": "b",
+                "text": "순환 신경망 (RNN)"
+              },
+              {
+                "value": "c",
+                "text": "자기 주의 (Self-Attention)"
+              },
+              {
+                "value": "d",
+                "text": "풀링 연산 (Pooling)"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "트랜스포머 아키텍처는 2017년 구글에서 발표한 'Attention is All You Need' 논문에서 소개된 구조로, 자기 주의(self-attention) 메커니즘을 통해 텍스트의 장거리 의존성을 효과적으로 포착하는 특성을 가집니다."
+            }
+          },
+          {
+            "question": "생성형 언어 모델(LLM)의 학습 방식 중 특정 작업 예시 없이 맥락만으로 응답을 생성하는 방식은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "파인튜닝 (Fine-tuning)"
+              },
+              {
+                "value": "b",
+                "text": "퓨샷 학습 (Few-shot Learning)"
+              },
+              {
+                "value": "c",
+                "text": "제로샷 학습 (Zero-shot Learning)"
+              },
+              {
+                "value": "d",
+                "text": "전이 학습 (Transfer Learning)"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "제로샷 학습은 특정 작업 예시 없이 맥락만으로 응답을 생성하는 방식입니다. 퓨샷 학습은 소수의 예시로 원하는 출력 형식이나 분석 방향을 안내하고, 파인튜닝은 특정 도메인이나 작업에 맞게 모델을 추가 학습시키는 방식입니다."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "OPSRCDTA0005": {
+    "id": "OPSRCDTA0003",
+    "subjectCode": "OPSRCDTA",
+    "subjectName": "오픈소스 기반 데이터 분석",
     "title": "오픈소스 기반 데이터 분석 기말고사 대비 종합 문제",
     "description": "정형 데이터 분석, 반정형 데이터 분석, 비정형 데이터 분석, 시계열 데이터 분석의 핵심 내용을 종합적으로 다루는 4지선다형 문제입니다.",
     "settings": {
