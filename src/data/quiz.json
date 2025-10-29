@@ -432,6 +432,593 @@
     "id": "OPSRCDTA0002",
     "subjectCode": "OPSRCDTA",
     "subjectName": "오픈소스 기반 데이터 분석",
+    "title": "오픈소스 기반 데이터 분석 기말고사(4-7)",
+    "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
+    "totalQuestions": 15,
+    "estimatedTime": "30분",
+    "settings": {
+      "showProgress": true,
+      "allowRetry": false,
+      "showExplanation": true,
+      "timeLimit": null
+    },
+    "sections": [
+      {
+        "id": "data-collection",
+        "title": "데이터 수집 (Data Collection)",
+        "questions": [
+          {
+            "question": "데이터 수집의 정의로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "단순히 데이터를 모으는 행위"
+              },
+              {
+                "value": "b",
+                "text": "분석 목적에 적합한 유효한 데이터를 탐색하고 적절한 방법으로 수집하여 분석에 적합한 형태로 준비하는 과정"
+              },
+              {
+                "value": "c",
+                "text": "인터넷에서 무작위로 데이터를 다운로드하는 과정"
+              },
+              {
+                "value": "d",
+                "text": "데이터베이스에서 모든 데이터를 추출하는 과정"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "데이터 수집은 단순히 데이터를 모으는 행위를 넘어, 분석 목적에 적합한 유효한 데이터를 탐색하고, 데이터를 수집할 수 있는 적절한 방법을 선택하며, 데이터의 정확성을 유지할 수 있는 형식 및 주기 등을 결정하는 전략적 과정입니다."
+            }
+          },
+          {
+            "question": "ISO 8000에서 제시하는 좋은 데이터의 조건에 포함되지 않는 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "정확성(Accuracy)"
+              },
+              {
+                "value": "b",
+                "text": "완전성(Completeness)"
+              },
+              {
+                "value": "c",
+                "text": "복잡성(Complexity)"
+              },
+              {
+                "value": "d",
+                "text": "일관성(Consistency)"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "ISO 8000에서 제시하는 좋은 데이터의 조건은 정확성, 완전성, 일관성, 유효성, 적시성, 상호운영성입니다. 복잡성은 데이터 품질을 평가하는 기준에 포함되지 않습니다."
+            }
+          },
+          {
+            "question": "비정형 데이터의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "행과 열로 구성된 테이블 형태로 저장된다"
+              },
+              {
+                "value": "b",
+                "text": "전체 데이터의 약 20%를 차지한다"
+              },
+              {
+                "value": "c",
+                "text": "미리 정의된 구조나 스키마 없이 자유로운 형태와 다양한 내용을 담고 있으며, 전체 데이터의 약 80%를 차지한다"
+              },
+              {
+                "value": "d",
+                "text": "관계형 데이터베이스에 저장하기 용이하다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "비정형 데이터는 미리 정의된 구조나 스키마 없이 자유로운 형태와 다양한 내용을 담고 있는 데이터로, 전체 데이터의 약 80%를 차지하는 것으로 추정됩니다. 문서, 이메일, 멀티미디어 등 다양한 형태로 존재합니다."
+            }
+          },
+          {
+            "question": "웹 스크래핑에 대한 설명으로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "웹 사이트의 모든 페이지를 자동으로 다운로드하는 기술"
+              },
+              {
+                "value": "b",
+                "text": "프로그램을 통해 웹 사이트에서 데이터를 자동으로 추출하고 수집하는 기술"
+              },
+              {
+                "value": "c",
+                "text": "웹 사이트의 디자인을 복사하는 기술"
+              },
+              {
+                "value": "d",
+                "text": "웹 사이트의 보안을 테스트하는 기술"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "웹 스크래핑은 프로그램을 통해 웹 사이트에서 데이터를 자동으로 추출하고 수집하는 기술입니다. requests, BeautifulSoup, Selenium, lxml 등 다양한 파이썬 라이브러리를 활용하여 수행할 수 있습니다."
+            }
+          },
+          {
+            "question": "API(Application Programming Interface)의 특징으로 올바르지 않은 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "소프트웨어 간의 상호작용을 가능하게 하는 인터페이스이다"
+              },
+              {
+                "value": "b",
+                "text": "미리 정의된 규칙과 명령어 집합을 제공한다"
+              },
+              {
+                "value": "c",
+                "text": "자동화된 데이터 수집이 불가능하다"
+              },
+              {
+                "value": "d",
+                "text": "JSON, XML과 같은 형식의 데이터를 반환한다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "API는 자동화된 데이터 수집을 가능하게 하는 중요한 특징을 가지고 있습니다. API를 통해 프로그램적으로 데이터에 접근하고 수집할 수 있으며, 이는 API의 주요 장점 중 하나입니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "data-storage",
+        "title": "데이터 저장 (Data Storage)",
+        "questions": [
+          {
+            "question": "CSV 파일 형식의 장점으로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "복잡한 구조 표현이 용이하다"
+              },
+              {
+                "value": "b",
+                "text": "바이너리 데이터 저장이 가능하다"
+              },
+              {
+                "value": "c",
+                "text": "높은 범용성과 다양한 프로그램 호환성을 가진다"
+              },
+              {
+                "value": "d",
+                "text": "데이터 타입 정보를 포함한다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "CSV 파일의 주요 장점은 높은 범용성과 다양한 프로그램 호환성입니다. MS 엑셀, 구글 스프레드시트, 데이터베이스 등 다양한 프로그램과 연동이 용이하며, 간단한 구조와 SQL 호환성을 가지고 있습니다."
+            }
+          },
+          {
+            "question": "JSON 파일 형식의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "행과 열의 테이블 구조만 표현 가능하다"
+              },
+              {
+                "value": "b",
+                "text": "계층 구조를 가진 데이터를 저장하는데 유용하다"
+              },
+              {
+                "value": "c",
+                "text": "바이너리 데이터 저장에 최적화되어 있다"
+              },
+              {
+                "value": "d",
+                "text": "CSV보다 용량이 작다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "JSON(JavaScript Object Notation)은 계층 구조를 가진 데이터를 저장하는데 유용합니다. 웹 API의 표준 형식이며 가독성이 우수하지만, 바이너리 데이터 저장은 불가능하고 CSV 대비 용량이 큽니다."
+            }
+          },
+          {
+            "question": "pandas DataFrame의 인덱스에 대한 설명으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "DataFrame 생성 시 문자열 인덱스가 자동 부여된다"
+              },
+              {
+                "value": "b",
+                "text": "인덱스는 변경할 수 없다"
+              },
+              {
+                "value": "c",
+                "text": "DataFrame 생성 시 정수형 인덱스가 자동 부여되며, set_index() 메소드로 특정 컬럼을 인덱스로 설정할 수 있다"
+              },
+              {
+                "value": "d",
+                "text": "인덱스는 데이터 검색에 사용할 수 없다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "DataFrame 생성 시 정수형 인덱스가 자동으로 부여되며, set_index() 메소드를 사용하여 문자열, 날짜 등 특정 컬럼을 인덱스로 설정할 수 있습니다. 인덱스는 특정 행을 빠르게 찾고 데이터를 조작하는 데 사용됩니다."
+            }
+          },
+          {
+            "question": "관계형 데이터베이스(RDBMS)의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "문서, 키-값 쌍 등 유연한 저장 구조를 지원한다"
+              },
+              {
+                "value": "b",
+                "text": "데이터를 행과 열로 구성된 테이블 형태로 저장하고 SQL을 통해 CRUD 작업을 수행한다"
+              },
+              {
+                "value": "c",
+                "text": "스키마가 없는 자유로운 데이터 저장이 가능하다"
+              },
+              {
+                "value": "d",
+                "text": "MongoDB, Cassandra와 같은 데이터베이스가 대표적이다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "관계형 데이터베이스(RDBMS)는 데이터를 행과 열로 구성된 테이블 형태로 저장하고 SQL을 통해 데이터의 CRUD(Create, Read, Update, Delete) 작업을 수행하는 특징을 가집니다."
+            }
+          },
+          {
+            "question": "API 키 관리 시 주의사항으로 올바르지 않은 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "외부에 노출되지 않도록 철저히 관리해야 한다"
+              },
+              {
+                "value": "b",
+                "text": "사용량을 모니터링하고 적절한 수준에서 관리해야 한다"
+              },
+              {
+                "value": "c",
+                "text": "깃허브나 공개 저장소에 업로드해도 문제없다"
+              },
+              {
+                "value": "d",
+                "text": "사용량 제한을 초과하지 않도록 주의해야 한다"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "API 키는 외부 서비스와의 통신을 위한 인증 수단으로, 깃허브나 공개 저장소에 업로드하지 않도록 주의해야 합니다. API 키가 노출되면 보안상 위험하며 무단 사용될 수 있습니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "data-preprocessing-1",
+        "title": "데이터 전처리 1 (Data Preprocessing 1)",
+        "questions": [
+          {
+            "question": "GIGO(Garbage In, Garbage Out) 원칙의 의미로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터를 많이 수집할수록 좋은 결과를 얻는다"
+              },
+              {
+                "value": "b",
+                "text": "잘못되거나 부정확한 데이터를 입력하면, 어떤 정교한 분석 기법을 적용하더라도 잘못된 결과가 출력된다"
+              },
+              {
+                "value": "c",
+                "text": "데이터 분석 도구가 중요하다"
+              },
+              {
+                "value": "d",
+                "text": "데이터 저장 방식이 결과를 결정한다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "GIGO(Garbage In, Garbage Out) 원칙은 잘못되거나 부정확한 데이터를 입력하면, 어떤 정교한 분석 기법을 적용하더라도 잘못된 결과가 출력된다는 사실을 함축합니다. 이는 데이터의 품질이 분석 결과의 질을 결정짓는다는 중요한 원칙입니다."
+            }
+          },
+          {
+            "question": "2021년 Forbes가 데이터 과학자 80명에게 실시한 설문조사 결과, 가장 많은 시간이 소요되고 가장 힘든 단계로 나타난 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터 수집"
+              },
+              {
+                "value": "b",
+                "text": "데이터 전처리"
+              },
+              {
+                "value": "c",
+                "text": "모델 구축"
+              },
+              {
+                "value": "d",
+                "text": "결과 해석"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "2021년 Forbes가 데이터 과학자 80명에게 실시한 설문조사에 따르면, 데이터 전처리가 가장 많은 시간이 소요되고 가장 힘든 단계로 나타났습니다. 이는 데이터 전처리의 중요성과 복잡성을 보여줍니다."
+            }
+          },
+          {
+            "question": "데이터 전처리의 정의로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터를 시각화하는 과정"
+              },
+              {
+                "value": "b",
+                "text": "데이터 분석에 앞서 원시 데이터를 정제하고 변환하여 분석에 적합한 형태로 만드는 일련의 작업"
+              },
+              {
+                "value": "c",
+                "text": "데이터를 저장하는 과정"
+              },
+              {
+                "value": "d",
+                "text": "데이터를 수집하는 과정"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "데이터 전처리는 데이터 분석에 앞서 원시 데이터(raw data)를 정제하고 변환하여 분석에 적합한 형태로 만드는 일련의 작업입니다. 이는 데이터의 정확성과 신뢰성을 확보하기 위해 지속적이고 반복적으로 수행됩니다."
+            }
+          },
+          {
+            "question": "pandas의 describe() 메소드가 수치형 데이터에 대해 제공하지 않는 통계량은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "평균(mean)"
+              },
+              {
+                "value": "b",
+                "text": "표준편차(std)"
+              },
+              {
+                "value": "c",
+                "text": "최빈값(mode)"
+              },
+              {
+                "value": "d",
+                "text": "사분위수(25%, 50%, 75%)"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "pandas의 describe() 메소드는 수치형 데이터에 대해 count, mean, std, min, 25%, 50%, 75%, max를 제공합니다. 최빈값(mode)은 범주형 데이터에 대해서만 제공되며, 수치형 데이터의 기본 통계량에는 포함되지 않습니다."
+            }
+          },
+          {
+            "question": "데이터 축소(data reduction)의 목적으로 가장 적절한 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "데이터의 정확성을 높이기 위해"
+              },
+              {
+                "value": "b",
+                "text": "방대한 데이터를 효율적으로 처리하기 위해 데이터의 크기를 줄이면서도 중요한 정보를 보존하기 위해"
+              },
+              {
+                "value": "c",
+                "text": "데이터의 일관성을 확보하기 위해"
+              },
+              {
+                "value": "d",
+                "text": "결측치를 제거하기 위해"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "데이터 축소(data reduction)는 방대한 데이터를 효율적으로 처리하기 위해 데이터의 크기를 줄이면서도 중요한 정보를 보존하는 과정입니다. 이를 통해 처리 시간을 단축하고 저장 공간을 절약할 수 있습니다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "data-preprocessing-2",
+        "title": "데이터 전처리 2 (Data Preprocessing 2)",
+        "questions": [
+          {
+            "question": "pandas에서 결측치를 탐지하는 메소드로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "isnull(), isna()"
+              },
+              {
+                "value": "b",
+                "text": "dropna(), fillna()"
+              },
+              {
+                "value": "c",
+                "text": "describe(), info()"
+              },
+              {
+                "value": "d",
+                "text": "mean(), median()"
+              }
+            ],
+            "correctAnswer": "a",
+            "explanation": {
+              "answer": "a",
+              "description": "pandas에서 결측치를 탐지하는 메소드는 isnull()과 isna()입니다. 이 메소드들은 각 요소가 결측치인지 여부를 나타내는 불리언 값을 반환하며, sum() 메소드와 결합하여 결측치 개수를 파악할 수 있습니다."
+            }
+          },
+          {
+            "question": "IQR(사분위범위)를 이용한 이상치 탐지에서 이상치로 판단되는 조건은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "Q1 - 1.5 * IQR 미만이거나 Q3 + 1.5 * IQR 초과"
+              },
+              {
+                "value": "b",
+                "text": "평균 ± 2 * 표준편차 범위를 벗어나는 값"
+              },
+              {
+                "value": "c",
+                "text": "중앙값에서 ± 50% 범위를 벗어나는 값"
+              },
+              {
+                "value": "d",
+                "text": "최솟값과 최댓값의 10% 범위를 벗어나는 값"
+              }
+            ],
+            "correctAnswer": "a",
+            "explanation": {
+              "answer": "a",
+              "description": "IQR(사분위범위)를 이용한 이상치 탐지에서는 Q1 - 1.5 * IQR 미만이거나 Q3 + 1.5 * IQR 초과하는 값을 이상치로 판단합니다. 여기서 IQR = Q3 - Q1이며, 이 방법은 비정규분포나 이상치가 많은 데이터에 적합합니다."
+            }
+          },
+          {
+            "question": "Z-Score를 이용한 이상치 탐지의 계산 공식으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "Z-Score = (데이터 값 - 중앙값) / 사분위범위"
+              },
+              {
+                "value": "b",
+                "text": "Z-Score = (데이터 값 - 평균) / 표준편차"
+              },
+              {
+                "value": "c",
+                "text": "Z-Score = (최댓값 - 최솟값) / 평균"
+              },
+              {
+                "value": "d",
+                "text": "Z-Score = (데이터 값 - 최솟값) / 범위"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "Z-Score는 정규분포를 가정하고 각 데이터가 평균으로부터 얼마나 떨어져 있는지를 표준편차 단위로 측정하는 방식으로, 계산 공식은 Z-Score = (데이터 값 - 평균) / 표준편차입니다."
+            }
+          },
+          {
+            "question": "결측치 대치 전략 중 시계열 데이터에 가장 적합한 방법은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "평균값 대치"
+              },
+              {
+                "value": "b",
+                "text": "최빈값 대치"
+              },
+              {
+                "value": "c",
+                "text": "전방/후방 채우기"
+              },
+              {
+                "value": "d",
+                "text": "특정값 대치"
+              }
+            ],
+            "correctAnswer": "c",
+            "explanation": {
+              "answer": "c",
+              "description": "시계열 데이터에서는 시간적 순서와 연속성이 중요하므로, 전방/후방 채우기(forward/backward fill) 방법이 가장 적합합니다. 이 방법은 이전 또는 이후 관측값으로 결측치를 대체하여 시간적 연속성을 유지합니다."
+            }
+          },
+          {
+            "question": "pandas의 merge() 메소드에서 'left join'의 특징으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "두 DataFrame의 공통된 키만 유지한다"
+              },
+              {
+                "value": "b",
+                "text": "왼쪽 DataFrame의 모든 행을 유지하고, 오른쪽 DataFrame에서 일치하는 데이터만 결합한다"
+              },
+              {
+                "value": "c",
+                "text": "오른쪽 DataFrame의 모든 행을 유지한다"
+              },
+              {
+                "value": "d",
+                "text": "두 DataFrame의 모든 행을 유지한다"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "pandas의 merge() 메소드에서 'left join'은 왼쪽 DataFrame의 모든 행을 유지하고, 오른쪽 DataFrame에서 일치하는 데이터만 결합하는 방식입니다. 일치하지 않는 경우 NaN 값으로 채워집니다."
+            }
+          },
+          {
+            "question": "pandas에서 날짜 데이터를 다룰 때 사용하는 함수와 접근자의 조합으로 올바른 것은 무엇인가?",
+            "options": [
+              {
+                "value": "a",
+                "text": "to_string() 함수와 str 접근자"
+              },
+              {
+                "value": "b",
+                "text": "to_datetime() 함수와 dt 접근자"
+              },
+              {
+                "value": "c",
+                "text": "to_numeric() 함수와 num 접근자"
+              },
+              {
+                "value": "d",
+                "text": "to_category() 함수와 cat 접근자"
+              }
+            ],
+            "correctAnswer": "b",
+            "explanation": {
+              "answer": "b",
+              "description": "pandas에서 날짜 데이터를 다룰 때는 to_datetime() 함수로 문자열을 날짜 형식으로 변환하고, dt 접근자를 사용하여 연도, 월, 일, 요일 등의 날짜 속성을 추출할 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "OPSRCDTA0003": {
+    "id": "OPSRCDTA0003",
+    "subjectCode": "OPSRCDTA",
+    "subjectName": "오픈소스 기반 데이터 분석",
     "title": "오픈소스 기반 데이터 분석 기말고사 대비 종합 문제",
     "description": "정형 데이터 분석, 반정형 데이터 분석, 비정형 데이터 분석, 시계열 데이터 분석의 핵심 내용을 종합적으로 다루는 4지선다형 문제입니다.",
     "settings": {

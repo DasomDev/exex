@@ -13,6 +13,15 @@
       "id": "OPSRCDTA0002",
       "subjectCode": "OPSRCDTA",
       "subjectName": "오픈소스기반데이터분석",
+      "title": "오픈소스 기반 데이터 분석 기말고사(4-7)",
+      "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
+      "totalQuestions": 15,
+      "estimatedTime": "30분"
+    },
+    {
+      "id": "OPSRCDTA0003",
+      "subjectCode": "OPSRCDTA",
+      "subjectName": "오픈소스기반데이터분석",
       "title": "데이터 타입에 따른 분석 방법(12-15)",
       "description": "",
       "totalQuestions": 15,
