@@ -3,7 +3,7 @@ import { ref, computed, reactive, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import quizData from '@/data/quiz.json'
 import TestStatus from '@/components/TestViewer/TestStatus.vue'
-import TestList from '@/components/TestViewer/index.vue'
+import TestList from '@/components/TestViewer/TestList.vue'
 
 interface Question {
   question: string
@@ -105,8 +105,8 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
 }
 </script>
 <template>
-  <div class="min-h-screen bg-gray-100">
-    <div class="max-w-4xl mx-auto px-8 my-12 py-12 bg-white rounded-lg shadow-lg p-8">
+  <div class="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 py-12">
+    <div class="max-w-4xl mx-auto px-8 py-12bg-white rounded-lg shadow-lg p-8 bg-white">
       <!-- 퀴즈 헤더 -->
       <div class="mb-8">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">
@@ -120,12 +120,12 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
         </p>
       </div>
 
-      <TestStatus
+      <!-- <TestStatus
         :totalQuestions="totalQuestions"
         :answeredQuestions="answeredQuestions"
         :correctAnswers="correctAnswers"
         :accuracy="accuracy"
-      />
+      /> -->
       <!-- 문제 섹션 -->
       <TestList :sections="sections" />
     </div>
