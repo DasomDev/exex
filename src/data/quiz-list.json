@@ -10,6 +10,15 @@
       "estimatedTime": "30분"
     },
     {
+      "id": "OPSRCDTA0002",
+      "subjectCode": "OPSRCDTA",
+      "subjectName": "오픈소스기반데이터분석",
+      "title": "데이터 타입에 따른 분석 방법(12-15)",
+      "description": "",
+      "totalQuestions": 15,
+      "estimatedTime": "30분"
+    },
+    {
       "id": "MGTSTRAT0001",
       "subjectCode": "MGTSTRAT",
       "subjectName": "경영전략론",

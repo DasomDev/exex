@@ -106,7 +106,7 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
 </script>
 <template>
   <div class="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 py-12">
-    <div class="max-w-4xl mx-auto px-8 py-12bg-white rounded-lg shadow-lg p-8 bg-white">
+    <div class="max-w-4xl mx-auto px-8 py-12 bg-white rounded-lg shadow-lg p-8">
       <!-- 퀴즈 헤더 -->
       <div class="mb-8">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">

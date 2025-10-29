@@ -51,7 +51,7 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
 </script>
 <template>
   <div class="space-y-8">
-    <div v-for="(section, sectionIndex) in sections" :key="section.id" class="bg-white p-8">
+    <div v-for="(section, sectionIndex) in sections" :key="section.id" class="bg-white">
       <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2">
         {{ sectionIndex + 1 }}. {{ section.title }}
       </h2>
