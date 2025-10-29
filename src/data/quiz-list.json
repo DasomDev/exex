@@ -1,0 +1,34 @@
+{
+  "quizList": [
+    {
+      "id": "open101",
+      "title": "오픈소스 기반 데이터 분석 기말고사",
+      "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
+      "subjectCode": "open101",
+      "totalQuestions": 15,
+      "difficulty": "중급",
+      "estimatedTime": "30분",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "web101",
+      "title": "웹 개발 기초 퀴즈",
+      "description": "HTML, CSS, JavaScript 기초 개념을 다루는 문제들",
+      "subjectCode": "web101",
+      "totalQuestions": 20,
+      "difficulty": "초급",
+      "estimatedTime": "25분",
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "vue101",
+      "title": "Vue.js 프레임워크 퀴즈",
+      "description": "Vue 3 Composition API와 관련된 심화 문제들",
+      "subjectCode": "vue101",
+      "totalQuestions": 12,
+      "difficulty": "고급",
+      "estimatedTime": "20분",
+      "createdAt": "2024-01-25"
+    }
+  ]
+}
