@@ -4,7 +4,7 @@
       "id": "OPSRCDTA0001",
       "subjectCode": "OPSRCDTA",
       "subjectName": "오픈소스기반데이터분석",
-      "title": "오픈소스 기반 데이터 분석 기말고사(1-3)",
+      "title": "오픈소스 기반 데이터 분석 기말고사(1강-3강)",
       "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
       "totalQuestions": 15,
       "estimatedTime": "30분"
@@ -13,7 +13,7 @@
       "id": "OPSRCDTA0002",
       "subjectCode": "OPSRCDTA",
       "subjectName": "오픈소스기반데이터분석",
-      "title": "오픈소스 기반 데이터 분석 기말고사(4-7)",
+      "title": "오픈소스 기반 데이터 분석 기말고사(4강-7강)",
       "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
       "totalQuestions": 15,
       "estimatedTime": "30분"
@@ -22,8 +22,17 @@
       "id": "OPSRCDTA0003",
       "subjectCode": "OPSRCDTA",
       "subjectName": "오픈소스기반데이터분석",
-      "title": "데이터 분석(8-9)",
-      "description": "데이터 분석에 대한 4지선다형 문제",
+      "title": "데이터 분석의 이해(8강, 9강)",
+      "description": "데이터분석, 탐색적 분석, 통계적분석 등 분석 방법론에 대한 4지선다형 문제",
+      "totalQuestions": 15,
+      "estimatedTime": "30분"
+    },
+    {
+      "id": "OPSRCDTA0004",
+      "subjectCode": "OPSRCDTA",
+      "subjectName": "오픈소스기반데이터분석",
+      "title": "데이터 시각화(10강, 11강)",
+      "description": "데이터 시각화에 대한 4지선다형 문제",
       "totalQuestions": 15,
       "estimatedTime": "30분"
     },
@@ -31,8 +40,8 @@
       "id": "OPSRCDTA0005",
       "subjectCode": "OPSRCDTA",
       "subjectName": "오픈소스기반데이터분석",
-      "title": "데이터 타입에 따른 분석 방법(12-15)",
-      "description": "",
+      "title": "데이터 타입에 따른 분석 방법(12강-15강)",
+      "description": "정형 데이터, 반정형 데이터, 비정형 데이터에 따른 분석 방법에 대한 4지선다형 문제",
       "totalQuestions": 15,
       "estimatedTime": "30분"
     },
