@@ -2,6 +2,7 @@
 import { ref, computed, reactive, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import quizData from '@/data/quiz.json'
+import TestHeader from '@/components/TestViewer/TestHeader.vue'
 import TestStatus from '@/components/TestViewer/TestStatus.vue'
 import TestList from '@/components/TestViewer/TestList.vue'
 import TestMarker from '@/components/TestViewer/TestMarker.vue'
@@ -111,20 +112,22 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
 }
 </script>
 <template>
-  <div class="py-12 min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+  <div class="pb-12 min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+    <TestHeader
+      :title="quiz?.title || '퀴즈 로딩 중...'"
+      :description="
+        quiz?.description ||
+        '각 문제를 풀어보시고 답안 보기 버튼을 눌러 정답과 해설을 확인해보세요.'
+      "
+    />
     <div class="px-8 py-12 mx-auto max-w-4xl bg-white rounded-lg shadow-lg">
       <!-- 퀴즈 헤더 -->
-      <div class="mb-8">
-        <h1 class="mb-4 text-3xl font-bold text-center text-gray-800">
-          {{ quiz?.title || '퀴즈 로딩 중...' }}
-        </h1>
-        <p class="text-gray-600">
-          {{
-            quiz?.description ||
-            '각 문제를 풀어보시고 답안 보기 버튼을 눌러 정답과 해설을 확인해보세요.'
-          }}
-        </p>
-      </div>
+      <p class="pb-6 mb-6 text-gray-600 border-b border-gray-200">
+        {{
+          quiz?.description ||
+          '각 문제를 풀어보시고 답안 보기 버튼을 눌러 정답과 해설을 확인해보세요.'
+        }}
+      </p>
 
       <!-- <TestStatus
         :totalQuestions="totalQuestions"

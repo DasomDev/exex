@@ -32,7 +32,7 @@
       "subjectCode": "OPSRCDTA",
       "subjectName": "오픈소스기반데이터분석",
       "title": "데이터 시각화(10강, 11강)",
-      "description": "데이터 시각화에 대한 4지선다형 문제",
+      "description": "데이터 시각화와 고급 시각화 기법에 대한 4지선다형 문제",
       "totalQuestions": 15,
       "estimatedTime": "30분"
     },
