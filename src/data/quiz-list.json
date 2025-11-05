@@ -62,6 +62,15 @@
       "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
       "totalQuestions": 12,
       "estimatedTime": "20분"
+    },
+    {
+      "id": "MGTSTRAT0003",
+      "subjectCode": "MGTSTRAT",
+      "subjectName": "경영전략론",
+      "title": "경영전략론 (7-9)",
+      "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
+      "totalQuestions": 12,
+      "estimatedTime": "20분"
     }
   ]
 }
