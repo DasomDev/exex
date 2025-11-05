@@ -1,48 +1,22 @@
-# .
+### 📑 EXEX – 기말고사 대비 학습용 퀴즈 뷰어
+##  https://exex-de0.pages.dev/
+> 강의 내용을 기반으로 AI가 생성한 **기말고사 대비 퀴즈**를 풀어볼 수 있는 웹 뷰어입니다.
 
-This template should help get you started developing with Vue 3 in Vite.
+---
 
-## Recommended IDE Setup
+## ✨ 프로젝트 소개
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+대학교 기말고사를 준비하면서 **기출문제가 없어 학습 방향을 잡기 어려웠던 경험**에서 출발했습니다.  
+이에 따라 강의 내용을 기반으로 AI가 자동으로 문제를 생성하고,  
+이를 간단히 풀어볼 수 있는 **정적 웹 퀴즈 뷰어(Exam Viewer)** 를 제작했습니다.
 
-## Recommended Browser Setup
+- 🎯 **목표:** 강의 내용의 핵심 개념 복습과 자가 테스트 지원  
+- 🤖 **AI 활용:** LLM 기반 문제 자동 생성
+- 💡 **형태:** 정적 JSON 데이터 기반 퀴즈 뷰어  
+- 🚀 **배포:** Cloudflare Pages
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- ## 🖥️ 주요 기능
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
+- 🔹 **섹션별 퀴즈 보기** – 강의 단원별로 문제 풀이 가능  
+- 🔹 **정답 확인 모드** – 선택 후 정답 및 해설 확인   
+- 🔹 **반응형 UI** – 모바일, PC 모두 지원  
