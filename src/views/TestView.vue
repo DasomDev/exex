@@ -26,6 +26,7 @@ interface Section {
 interface Quiz {
   id: string
   subjectCode: string
+  subjectName: string
   title: string
   description: string
   settings: {
@@ -65,6 +66,8 @@ onMounted(() => {
     router.push('/test/404')
     console.error('Quiz not found:', quizId)
   }
+  // on mounted scroll top
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 
 // 상태 관리
@@ -115,6 +118,7 @@ const checkAnswer = (questionId: number, correctAnswer: string) => {
   <div class="pb-12 min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
     <TestHeader
       :title="quiz?.title || '퀴즈 로딩 중...'"
+      :subjectName="quiz?.subjectName"
       :description="
         quiz?.description ||
         '각 문제를 풀어보시고 답안 보기 버튼을 눌러 정답과 해설을 확인해보세요.'
