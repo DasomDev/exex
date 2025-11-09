@@ -46,6 +46,15 @@
       "estimatedTime": "30분"
     },
     {
+      "id": "CLOUD0001",
+      "subjectCode": "CLOUD",
+      "subjectName": "클라우드 컴퓨팅",
+      "title": "클라우드 컴퓨팅 기초(1강-3강)",
+      "description": "클라우드 컴퓨팅의 개념, 클라우드 컴퓨팅의 장점, 클라우드 컴퓨팅의 단점에 대한 4지선다형 문제",
+      "totalQuestions": 15,
+      "estimatedTime": "30분"
+    },
+    {
       "id": "MGTSTRAT0001",
       "subjectCode": "MGTSTRAT",
       "subjectName": "경영전략론",
