@@ -6,8 +6,7 @@
       "subjectName": "오픈소스기반데이터분석",
       "title": "오픈소스 기반 데이터 분석 기말고사(1강-3강)",
       "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 15
     },
     {
       "id": "OPSRCDTA0002",
@@ -15,8 +14,7 @@
       "subjectName": "오픈소스기반데이터분석",
       "title": "오픈소스 기반 데이터 분석 기말고사(4강-7강)",
       "description": "데이터 수집, 저장, 전처리, 분석, 시각화 등의 주제별 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 21
     },
     {
       "id": "OPSRCDTA0003",
@@ -24,8 +22,7 @@
       "subjectName": "오픈소스기반데이터분석",
       "title": "데이터 분석의 이해(8강, 9강)",
       "description": "데이터분석, 탐색적 분석, 통계적분석 등 분석 방법론에 대한 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 20
     },
     {
       "id": "OPSRCDTA0004",
@@ -33,8 +30,7 @@
       "subjectName": "오픈소스기반데이터분석",
       "title": "데이터 시각화(10강, 11강)",
       "description": "데이터 시각화와 고급 시각화 기법에 대한 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 16
     },
     {
       "id": "OPSRCDTA0005",
@@ -42,8 +38,7 @@
       "subjectName": "오픈소스기반데이터분석",
       "title": "데이터 타입에 따른 분석 방법(12강-15강)",
       "description": "정형 데이터, 반정형 데이터, 비정형 데이터에 따른 분석 방법에 대한 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 20
     },
     {
       "id": "CLOUD0001",
@@ -51,8 +46,7 @@
       "subjectName": "클라우드 컴퓨팅",
       "title": "클라우드 컴퓨팅 기초(1강-3강)",
       "description": "클라우드 컴퓨팅의 개념, 클라우드 컴퓨팅의 장점, 클라우드 컴퓨팅의 단점에 대한 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 15
     },
     {
       "id": "MGTSTRAT0001",
@@ -60,8 +54,7 @@
       "subjectName": "경영전략론",
       "title": "경영전략론 (1-3)",
       "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
-      "totalQuestions": 15,
-      "estimatedTime": "30분"
+      "totalQuestions": 24
     },
     {
       "id": "MGTSTRAT0002",
@@ -69,8 +62,7 @@
       "subjectName": "경영전략론",
       "title": "경영전략론 (4-6)",
       "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
-      "totalQuestions": 12,
-      "estimatedTime": "20분"
+      "totalQuestions": 12
     },
     {
       "id": "MGTSTRAT0003",
@@ -78,8 +70,7 @@
       "subjectName": "경영전략론",
       "title": "경영전략론 (7-9)",
       "description": "경영전략의 개념과 외부환경 중심의 경쟁력 분석에 대한 4지선다형 문제",
-      "totalQuestions": 12,
-      "estimatedTime": "20분"
+      "totalQuestions": 21
     },
     {
       "id": "MGTSTRAT0004",
@@ -87,8 +78,7 @@
       "subjectName": "경영전략론",
       "title": "경영전략론 (10, 11)",
       "description": "기업이론 대한 4지선다형 문제",
-      "totalQuestions": 12,
-      "estimatedTime": "20분"
+      "totalQuestions": 16
     }
   ]
 }

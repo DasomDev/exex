@@ -15,10 +15,10 @@ const goBack = () => {
 </script>
 <template>
   <div
-    class="relative flex justify-center items-center gap-4 py-6 mb-10 bg-white/80 shadow-sm border-b border-gray-200"
+    class="flex relative gap-4 justify-center items-center py-6 mb-10 border-b border-gray-200 shadow-sm bg-white/80"
   >
-    <div class="max-w-4xl mx-auto flex items-center gap-4 w-full">
-      <button @click="goBack" class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+    <div class="flex gap-4 items-center mx-auto w-full max-w-4xl">
+      <button @click="goBack" class="p-2 rounded-lg transition-colors hover:bg-gray-100">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -34,14 +34,14 @@ const goBack = () => {
           />
         </svg>
       </button>
-      <h1 class="text-2xl font-semibold text-center text-gray-800 flex items-start gap-2">
+      <h1 class="flex flex-col gap-2 items-start text-2xl font-semibold text-center text-gray-800 sm:flex-row">
         <span
           v-if="subjectName"
-          class="text-gray-500 text-sm bg-gray-100 px-2 py-1 rounded-full font-normal"
+          class="px-2 py-1 text-sm font-normal text-gray-500 bg-gray-100 rounded-full shrink-0"
         >
           {{ subjectName }}
         </span>
-        <span class="text-gray-800 text-lg">{{ title }}</span>
+        <span class="text-lg text-gray-800">{{ title }}</span>
       </h1>
     </div>
   </div>
