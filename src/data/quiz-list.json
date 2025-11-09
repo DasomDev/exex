@@ -49,6 +49,14 @@
       "totalQuestions": 15
     },
     {
+      "id": "CLOUD0002",
+      "subjectCode": "CLOUD",
+      "subjectName": "클라우드 컴퓨팅",
+      "title": "클라우드 컴퓨팅 기초(3강 보강)",
+      "description": "클라우트컴퓨팅기술에 관한 4지선다형 문제",
+      "totalQuestions": 15
+    },
+    {
       "id": "MGTSTRAT0001",
       "subjectCode": "MGTSTRAT",
       "subjectName": "경영전략론",
