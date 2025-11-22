@@ -87,6 +87,14 @@
       "title": "경영전략론 (10, 11)",
       "description": "기업이론 대한 4지선다형 문제",
       "totalQuestions": 16
+    },
+    {
+      "id": "MGTSTRAT0005",
+      "subjectCode": "MGTSTRAT",
+      "subjectName": "경영전략론",
+      "title": "경영전략론 (12, 13)",
+      "description": "기업이론 대한 4지선다형 문제",
+      "totalQuestions": 10
     }
   ]
 }
